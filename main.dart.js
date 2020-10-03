@@ -39928,7 +39928,7 @@ o.push(M.c0(q,q,q,q,q,q,16,q,q,q,q))
 if(b instanceof X.vL)o.push(D.ak2(L.bz("SELECT WALLET",q,q,q,q,q),new X.TQ(this.a,a)))
 else if(b instanceof X.vK){s=R.bL(a,t.ic).d
 r=t.X
-o.push(A.apA(T.ma(H.a([L.bz(b.a?"Welcome! Please provide the same password as you have used before":"Welcome new user!",q,q,q,q,q),M.c0(q,q,q,q,q,q,16,q,q,q,q),Y.akO(!0,L.rr(q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,C.by,q,q,q,!0,q,q,q,q,q,q,q,q,!1,q,q,"Username",q,q,q,q,q,q,q,q,q,q,q),"username",!1,q,q),M.c0(q,q,q,q,q,q,16,q,q,q,q),Y.akO(!1,L.rr(q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,C.by,q,q,q,!0,q,q,q,q,q,q,q,q,!1,q,q,"Password",q,q,q,q,q,q,q,q,q,q,q),"password",!0,q,P.a4(["password-incorrect","You entered an incorrect password"],r,r)),T.n1(D.ak2(L.bz("ADD",q,q,q,q,q),new X.TR(a)),q,1/0)],p),C.bx,C.c9),s))}return T.ma(o,C.bx,C.c9)},
+o.push(A.apA(T.ma(H.a([L.bz(!b.a?"Welcome! Please provide the same password as you have used before":"Welcome new user!",q,q,q,q,q),M.c0(q,q,q,q,q,q,16,q,q,q,q),Y.akO(!0,L.rr(q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,C.by,q,q,q,!0,q,q,q,q,q,q,q,q,!1,q,q,"Username",q,q,q,q,q,q,q,q,q,q,q),"username",!1,q,q),M.c0(q,q,q,q,q,q,16,q,q,q,q),Y.akO(!1,L.rr(q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,C.by,q,q,q,!0,q,q,q,q,q,q,q,q,!1,q,q,"Password",q,q,q,q,q,q,q,q,q,q,q),"password",!0,q,P.a4(["password-incorrect","You entered an incorrect password"],r,r)),T.n1(D.ak2(L.bz("ADD",q,q,q,q,q),new X.TR(a)),q,1/0)],p),C.bx,C.c9),s))}return T.ma(o,C.bx,C.c9)},
 $C:"$2",
 $R:2,
 $S:195}
