@@ -4,20 +4,20 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "sql-wasm.js": "63ac58d843bccce6c3c4b0c1cd6c4422",
-"version.json": "d45ee747decb2a71b41445003112669f",
-"main.dart.js": "91b6dfa5e6d293eab4fcc1090c54bc17",
-"assets/NOTICES": "57c9c139bcc26ed6b1aa5e2ceabc437b",
+"version.json": "b707f51c1c0147506d74a238ff252173",
+"main.dart.js": "e51f8f06d4cae8a765e2cd949ee1f1bd",
+"assets/NOTICES": "9c44db341db5cbd014f00cfc9025c04c",
 "assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/fonts/MaterialIcons-Regular.otf": "132a5e63b5e510933ab4845577716106",
 "assets/assets/images/logo-horiz-no-subtitle.png": "5d8bacfe570732f37af3ccf70a092e81",
 "assets/AssetManifest.json": "74d940a529ad1b1c6e8fbbe101c4f3d4",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"index.html": "2596f5f57a32cc221b7fb02bddaa48d5",
-"/": "2596f5f57a32cc221b7fb02bddaa48d5",
-"manifest.json": "85fdd273ba61aac4a905e35759af7a0a",
+"favicon.png": "49623618e34e76925ba5a44f8dc95a89",
+"index.html": "92953a4f6a46bd6e8f0548d0c2e89210",
+"/": "92953a4f6a46bd6e8f0548d0c2e89210",
+"manifest.json": "a610c0950a2012e01119d0e8a57e3585",
 "sql-wasm.wasm": "867016e4a77ae35dc11f37e333b95caa",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1"
+"icons/Icon-512.png": "bcad5884196c85e3ac23affa0cc050da",
+"icons/Icon-192.png": "885b984ac13230ad7e85436d0bf1adb3"
 };
 
 // The application shell files that are downloaded before a service worker can
