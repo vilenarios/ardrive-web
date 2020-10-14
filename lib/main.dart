@@ -2,6 +2,7 @@ import 'package:ardrive/theme/theme.dart';
 import 'package:arweave/arweave.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'app_shell.dart';
 import 'blocs/blocs.dart';
@@ -63,6 +64,8 @@ class App extends StatelessWidget {
         child: MaterialApp(
           title: 'ArDrive',
           theme: appTheme(),
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
           home: BlocBuilder<ProfileBloc, ProfileState>(
             builder: (context, state) {
               if (state is ProfileUnavailable) {
