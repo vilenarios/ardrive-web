@@ -62,7 +62,7 @@ class FsEntryRenameCubit extends Cubit<FsEntryRenameState> {
         folder = folder.copyWith(name: newName, lastUpdated: DateTime.now());
 
         final folderTx = await _arweave.prepareEntityTx(
-            folder.asEntity(), profile.wallet, driveKey);
+            folder.asArFsEntity(), profile.wallet, driveKey);
 
         await _arweave.postTx(folderTx);
         await _driveDao.writeToFolder(folder);
@@ -77,7 +77,7 @@ class FsEntryRenameCubit extends Cubit<FsEntryRenameState> {
         file = file.copyWith(name: newName, lastUpdated: DateTime.now());
 
         final fileTx = await _arweave.prepareEntityTx(
-            file.asEntity(), profile.wallet, driveKey);
+            file.asArFsEntity(), profile.wallet, driveKey);
 
         await _arweave.postTx(fileTx);
         await _driveDao.writeToFile(file);

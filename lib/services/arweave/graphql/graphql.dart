@@ -1,5 +1,4 @@
-import 'package:ardrive/entities/entities.dart';
-
+import '../../services.dart';
 import 'graphql_api.dart';
 
 export 'graphql_api.dart';

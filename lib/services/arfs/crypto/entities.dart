@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:ardrive/entities/entities.dart';
 import 'package:arweave/arweave.dart';
 import 'package:arweave/utils.dart' as utils;
 import 'package:cryptography/cryptography.dart' hide Cipher;
 
-import '../services.dart';
+import '../../services.dart';
+import '../arfs.dart';
 
 Future<Map<String, dynamic>> decryptEntityJson(
   TransactionCommonMixin transaction,
@@ -48,7 +48,7 @@ Future<Uint8List> decryptTransactionData(
 
 /// Creates a transaction with the provided entity's JSON data encrypted along with the appropriate cipher tags.
 Future<Transaction> createEncryptedEntityTransaction(
-        Entity entity, SecretKey key) =>
+        ArFsEntity entity, SecretKey key) =>
     createEncryptedTransaction(utf8.encode(json.encode(entity)), key);
 
 /// Creates a transaction with the provided data encrypted along with the appropriate cipher tags.

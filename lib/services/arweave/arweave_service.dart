@@ -1,6 +1,5 @@
 import 'dart:typed_data';
 
-import 'package:ardrive/entities/entities.dart';
 import 'package:artemis/artemis.dart';
 import 'package:arweave/arweave.dart';
 import 'package:arweave/utils.dart' as utils;
@@ -56,7 +55,7 @@ class ArweaveService {
       try {
         final entityType = transaction.getTag(EntityTag.entityType);
 
-        Entity entity;
+        ArFsEntity entity;
         if (entityType == EntityType.drive) {
           entity = await DriveEntity.fromTransaction(
               transaction, rawEntityData[i], driveKey);
@@ -210,12 +209,13 @@ class ArweaveService {
   }
 
   Future<Transaction> prepareEntityTx(
-    Entity entity,
+    ArFsEntity entity,
     Wallet wallet, [
     SecretKey key,
   ]) async {
     final tx = await _arweave.transactions.prepare(
-      await entity.asTransaction(key),
+      await entity.asTransaction(key)
+        ..addApplicationTags(),
       wallet,
     );
 
@@ -278,7 +278,7 @@ class BlockEntities {
   final int blockHeight;
 
   /// A list of entities present in this block, ordered by ascending timestamp.
-  List<Entity> entities = <Entity>[];
+  List<ArFsEntity> entities = <ArFsEntity>[];
 
   BlockEntities(this.blockHeight);
 }
@@ -288,4 +288,11 @@ class UploadTransactions {
   Transaction dataTx;
 
   UploadTransactions(this.entityTx, this.dataTx);
+}
+
+extension TransactionUtils on Transaction {
+  void addApplicationTags() {
+    addTag(EntityTag.appName, 'ArDrive-Web');
+    addTag(EntityTag.appVersion, '0.1.0');
+  }
 }

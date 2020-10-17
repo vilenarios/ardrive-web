@@ -1,4 +1,4 @@
-import 'package:ardrive/entities/entities.dart';
+import 'package:ardrive/services/services.dart';
 import 'package:moor/moor.dart';
 
 import './database/database.dart';
@@ -23,7 +23,7 @@ class FolderEntries extends Table {
 }
 
 extension FolderEntryExtensions on FolderEntry {
-  FolderEntity asEntity() => FolderEntity(
+  FolderEntity asArFsEntity() => FolderEntity(
         id: id,
         driveId: driveId,
         parentFolderId: parentFolderId,

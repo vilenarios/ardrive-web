@@ -1,2 +1,2 @@
-export 'entities.dart';
+export '../arfs/crypto/entities.dart';
 export 'keys.dart';

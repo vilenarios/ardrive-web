@@ -6,12 +6,12 @@ import 'package:arweave/arweave.dart';
 import 'package:cryptography/cryptography.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-import 'entities.dart';
+import '../arfs.dart';
 
 part 'folder_entity.g.dart';
 
 @JsonSerializable()
-class FolderEntity extends Entity {
+class FolderEntity extends ArFsEntity {
   @JsonKey(ignore: true)
   String id;
   @JsonKey(ignore: true)
@@ -56,8 +56,7 @@ class FolderEntity extends Entity {
         : await createEncryptedEntityTransaction(this, driveKey);
 
     tx
-      ..addApplicationTags()
-      ..addArFsTag()
+      ..addArFsTags()
       ..addTag(EntityTag.entityType, EntityType.folder)
       ..addTag(EntityTag.driveId, driveId)
       ..addTag(EntityTag.folderId, id);

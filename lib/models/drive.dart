@@ -1,4 +1,4 @@
-import 'package:ardrive/entities/entities.dart';
+import 'package:ardrive/services/services.dart';
 import 'package:moor/moor.dart';
 
 import './database/database.dart';
@@ -33,7 +33,7 @@ extension DriveExtensions on Drive {
   bool get isPublic => privacy == DrivePrivacy.public;
   bool get isPrivate => privacy == DrivePrivacy.private;
 
-  DriveEntity asEntity() => DriveEntity(
+  DriveEntity asArFsEntity() => DriveEntity(
         id: id,
         name: name,
         rootFolderId: rootFolderId,

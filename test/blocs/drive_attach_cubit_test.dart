@@ -1,5 +1,4 @@
 import 'package:ardrive/blocs/blocs.dart';
-import 'package:ardrive/entities/entities.dart';
 import 'package:ardrive/models/models.dart';
 import 'package:ardrive/services/services.dart';
 import 'package:bloc_test/bloc_test.dart';

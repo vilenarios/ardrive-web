@@ -7,7 +7,7 @@ import 'package:cryptography/cryptography.dart';
 import 'package:json_annotation/json_annotation.dart';
 import 'package:meta/meta.dart';
 
-import 'entities.dart';
+import '../arfs.dart';
 
 part 'file_entity.g.dart';
 
@@ -16,7 +16,7 @@ DateTime _intToDateTime(int v) =>
 int _dateTimeToInt(DateTime v) => v.millisecondsSinceEpoch;
 
 @JsonSerializable()
-class FileEntity extends Entity {
+class FileEntity extends ArFsEntity {
   @JsonKey(ignore: true)
   String id;
   @JsonKey(ignore: true)
@@ -88,8 +88,7 @@ class FileEntity extends Entity {
         : await createEncryptedEntityTransaction(this, fileKey);
 
     tx
-      ..addApplicationTags()
-      ..addArFsTag()
+      ..addArFsTags()
       ..addTag(EntityTag.entityType, EntityType.file)
       ..addTag(EntityTag.driveId, driveId)
       ..addTag(EntityTag.parentFolderId, parentFolderId)
