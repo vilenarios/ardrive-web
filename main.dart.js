@@ -19290,7 +19290,7 @@ dz:function(a,b){var s=a.hD$
 s=(s&&C.c).ly(s,new K.af_(b),new K.af0())
 return s==null?null:s.b},
 arh:function(a){var s="Unix-Time"
-return P.I2(K.dz(a,"ArFS")!=="0.11"?P.fu(K.dz(a,s),null)*1000:P.fu(K.dz(a,s),null),!1)},
+return P.I2(K.dz(a,"ArFS")!=="0.10"?P.fu(K.dz(a,s),null)*1000:P.fu(K.dz(a,s),null),!1)},
 af_:function af_(a){this.a=a},
 af0:function af0(){},
 M2:function M2(a){this.a=a},
