@@ -20,7 +20,7 @@ const RESOURCES = {
 "sql-wasm.js": "63ac58d843bccce6c3c4b0c1cd6c4422",
 "sql-wasm.wasm": "867016e4a77ae35dc11f37e333b95caa",
 "manifest.json": "a610c0950a2012e01119d0e8a57e3585",
-"main.dart.js": "9ebb2afb5aeb20c5106c2223d6d34aae",
+"main.dart.js": "14f4b3af31b5f2420eb09fc7da94c8ae",
 "version.json": "b707f51c1c0147506d74a238ff252173",
 "index.html": "92953a4f6a46bd6e8f0548d0c2e89210",
 "/": "92953a4f6a46bd6e8f0548d0c2e89210",
