@@ -38217,7 +38217,7 @@ O.Px.prototype={
 G:function(a,b){return O.fD(null,new O.ah4(this),null,t.Jy,t.pH)},
 RY:function(){return this.aJ(new O.ah5(this))}}
 O.ah4.prototype={
-$2:function(a,b){var s=null,r=U.tl("assets/images/logo-horiz-no-subtitle.png",C.nz,64),q=this.a,p=t.t,o=H.b([B.fM(s,L.dC(C.AV),new O.ah2(q),C.as,s)],p),n=T.fk(H.b([new A.GZ(s),T.yv(q.a.c)],p),C.a1,C.S,C.ai,s)
+$2:function(a,b){var s=null,r=U.tl("assets/images/logo-horiz-beta-no-subtitle.png",C.nz,64),q=this.a,p=t.t,o=H.b([B.fM(s,L.dC(C.AV),new O.ah2(q),C.as,s)],p),n=T.fk(H.b([new A.GZ(s),T.yv(q.a.c)],p),C.a1,C.S,C.ai,s)
 p=H.b([],p)
 p.push(new M.Bu(new E.x7(r,o,new P.a4(1/0,56),s),n,s))
 if(q.d)for(r=P.bR([D.z0(C.bO,s,C.ay,!1,s,s,s,s,s,s,s,s,s,s,s,new O.ah3(q),s,s,s,s,s,s),T.awo(new K.Ml(s),16,42)],t.ib),r=P.bo(r,r.r,r.$ti.c);r.p();)p.push(r.d)
