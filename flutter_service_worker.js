@@ -26,7 +26,7 @@ const RESOURCES = {
 "/": "a1219d10f64e57acfb4133b6c2fcaf31",
 "icons/Icon-192.png": "885b984ac13230ad7e85436d0bf1adb3",
 "icons/Icon-512.png": "bcad5884196c85e3ac23affa0cc050da",
-"pst.min.js": "456b97c6b37994e9cbe38065e73ae630"
+"pst.min.js": "a0563cecdda21dd1f8b4056c7300f842"
 };
 
 // The application shell files that are downloaded before a service worker can
