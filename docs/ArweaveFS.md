@@ -56,7 +56,7 @@ When creating a Drive, a corresponding folder must be created as well. This fold
 ```
 ArFS: 0.11
 Cipher?: AES256-GCM
-Cipher-IV?: <12 byte initialization vector as hex>
+Cipher-IV?: <12 byte initialization vector as Base64>
 Content-Type: <application/json | application/octet-stream>
 Drive-Id: <uuid>
 Drive-Privacy: <public | private>
@@ -97,7 +97,7 @@ A File contains actual data, like a photo, document or movie.  File entity metad
 ``` File MetaData Transaction
 ArFS: 0.11
 Cipher?: AES256-GCM
-Cipher-IV?: <12 byte initialization vector as hex>
+Cipher-IV?: <12 byte initialization vector as Base64>
 Content-Type: <application/json | application/octet-stream>
 Drive-Id: <drive uuid>
 Entity-Type: file
@@ -117,7 +117,7 @@ Unix-Time: <seconds since unix epoch>
 The File data transaction contains limited information about the file, such as the information required to decrypt it or the Content-Type (mime-type) needed to view in the browser.
 ``` File Data Transaction
 Cipher?: AES256-GCM
-Cipher-IV?: <12 byte initialization vector as hex>
+Cipher-IV?: <12 byte initialization vector as Base64>
 Content-Type: <file mime-type | application/octet-stream>
  { File data }
 ```
